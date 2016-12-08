@@ -46,9 +46,9 @@ public class App
 				public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties,
 						byte[] body) throws IOException {
 					String message = new String(body, "UTF-8");
-					System.out.println("Java Queue - Message Received '" + message + "'");
+					//System.out.println("Java Queue - Message Received '" + message + "'");
 					Log log = jsontoClass(message);
-					log.toString();
+					System.out.println(log.toString());
 				}
 			};
 			// loop that waits for message 		
@@ -67,6 +67,7 @@ public class App
 			Log log = mapper.readValue(message, Log.class);
 			return log;
 		} catch (Exception e){
+			e.printStackTrace();
 			System.out.println("Some error occurred while decoding JSON String");
 		}
 		return null;
