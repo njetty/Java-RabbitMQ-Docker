@@ -47,7 +47,7 @@ public class App
 						byte[] body) throws IOException {
 					String message = new String(body, "UTF-8");
 					System.out.println("Java Queue - Message Received '" + message + "'");
-					Log log = jsontoclass(message);
+					Log log = jsontoClass(message);
 					log.toString();
 				}
 			};
