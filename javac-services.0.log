@@ -1,3 +1,0 @@
-INFO	?	main	2016-12-08T19:09:55.030Z	org.javacs.Main#connectToNode	Connected to parent using socket on port 55282
-INFO	?	main	2016-12-08T19:09:55.101Z	org.javacs.JavaLanguageServer#doLint	Lint [/nfs/nfs4/home/njetty/Desktop/SGA/registrymq/src/main/java/com/sga/registrymq/App.java]
-INFO	?	main	2016-12-08T19:09:55.115Z	org.javacs.JavaLanguageServer#buildClassPath	Emit classpath to /tmp/classpath3180985220488425813.txt
